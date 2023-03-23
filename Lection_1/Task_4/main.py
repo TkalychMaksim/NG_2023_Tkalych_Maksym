@@ -12,10 +12,10 @@ def solution():
     if discriminant < 0:
         print("The equation has no roots")
     if discriminant == 0:
-        print(f"Result: x = {((-number_b*number_b)+math.sqrt(discriminant))/(2*number_a)}")
+        print(f"Result: x = {(-number_b+math.sqrt(discriminant))/(2*number_a)}")
     if discriminant > 0:
-        first_root = (-(number_b*number_b)+math.sqrt(discriminant))/(2*number_a)
-        second_root = (-(number_b*number_b)-math.sqrt(discriminant))/(2*number_a)
+        first_root = (-number_b+math.sqrt(discriminant))/(2*number_a)
+        second_root = (-number_b-math.sqrt(discriminant))/(2*number_a)
         print(f"Result: x1 = {first_root}, x2 = {second_root}")
 
 
