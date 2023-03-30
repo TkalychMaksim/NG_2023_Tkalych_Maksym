@@ -47,5 +47,3 @@ while True:
                 print("Error. Book with this title not found")
             print('<L> <I> <B> <R> <A> <R> <Y>')
 
-        case "Books":
-            print(library)
