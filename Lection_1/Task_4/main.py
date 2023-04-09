@@ -1,9 +1,10 @@
 import math
 print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 print("Equation example: ax^2+bx+c=0")
-number_a = int(input("Please, enter the a argument: "))
-number_b = int(input("Please, enter the b argument: "))
-number_c = int(input("Please, enter the c argument: "))
+print("Enter the equation arguments:")
+number_a = int(input("a = "))
+number_b = int(input("b = "))
+number_c = int(input("c = "))
 
 discriminant = number_b * number_b - 4*number_a*number_c
 
