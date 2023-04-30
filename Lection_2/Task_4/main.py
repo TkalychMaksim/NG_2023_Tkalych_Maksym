@@ -11,7 +11,7 @@ while True:
             book_pages = int(input("Number of pages: "))
             book_genre = input("Genre: ")
             book_binding = input("Book binding: ")
-            print('<L> <I> <B> <R> <A> <R> <Y>')
+            print()
 
             book = {
                 "Title": book_name,
@@ -28,7 +28,7 @@ while True:
             print(f"Books list: {list(library.keys())}")
             book_name = input("Enter the name of book you want to delete: ")
             del library[book_name]
-            print('<L> <I> <B> <R> <A> <R> <Y>')
+            print()
 
         case "Edit existing book" | "3":
             editing_book = input(f"Choose the book from list {list(library.keys())}: ")
@@ -36,7 +36,7 @@ while True:
             new_value = input(f"Enter the new value of {param}: ")
             library[editing_book][param] = new_value
             print(f"Success!. The new value of {param} is '{new_value}'")
-            print('<L> <I> <B> <R> <A> <R> <Y>')
+            print()
 
         case "Find a book" | "4":
             print(f'Book list: {list(library.keys())}')
@@ -46,5 +46,5 @@ while True:
                 print(library[search_title])
             else:
                 print("Error. Book with this title not found")
-            print('<L> <I> <B> <R> <A> <R> <Y>')
+            print()
 
