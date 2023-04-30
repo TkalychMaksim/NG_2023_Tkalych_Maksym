@@ -26,7 +26,6 @@ def new_book():
     book_pages = int(input("Number of pages: "))
     book_genre = input("Genre: ")
     book_binding = input("Book binding: ")
-    print('<L> <I> <B> <R> <A> <R> <Y>')
     print()
     book = {
         "Title": book_name,
@@ -48,7 +47,6 @@ def delete_book():
         print(f"Success. Book with title {book_title} was deleted.")
     else:
         print("Error. Book with this title not found.")
-    print('<L> <I> <B> <R> <A> <R> <Y>')
     print()
 
 
@@ -58,7 +56,6 @@ def edit_book():
     new_value = input(f"Enter the new value of {param}: ")
     library[editing_book][param] = new_value
     print(f"Success!. The new value of {param} is '{new_value}'")
-    print('<L> <I> <B> <R> <A> <R> <Y>')
     print()
 
 
@@ -70,7 +67,6 @@ def find_book():
         print(library[search_title])
     else:
         print("Error. Book with this title not found")
-    print('<L> <I> <B> <R> <A> <R> <Y>')
     print()
 
 
