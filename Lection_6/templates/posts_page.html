@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>News Page</title>
+</head>
+<style>
+    .right-button {
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    }
+</style>
+<body>
+    <h1>News:</h1>
+    {% for post in posts %}
+    <div>
+        <h2> <a href="/posts/{{ post.id }}">{{ post.header }}</a></h2>
+        <p> <strong> Author &nbsp;{{ post.author }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date:&nbsp;{{ post.date.date() }} </strong> </p>
+    {% endfor %}
+    </div>
+    <form action="/login" method="GET">
+        <button class="right-button" type="submit">New Post</button>
+    </form>
+</body>
+</html>
