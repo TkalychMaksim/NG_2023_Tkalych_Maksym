@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>News Editor Page</title>
@@ -8,15 +8,18 @@
 <h1>Fill the blanks</h1>
 <form action="/editor" method="POST">
     <label for="header"><strong>Header</strong>:</label><br>
-    <input type="text" id="header" name="header"><br><br>
+    <input type="text" id="header" name="header" required><br><br>
 
     <label for="author"><strong>Author</strong>:</label><br>
-    <input type="text" id="author" name="author"><br><br>
+    <input type="text" id="author" name="author" required><br><br>
 
     <label for="post_text"><strong>Post text</strong>:</label><br>
-    <textarea id="post_text" name="post_text" rows="5" cols="50"></textarea><br><br>
+    <textarea id="post_text" name="post_text" rows="5" cols="50" required></textarea><br><br>
 
-    <button style="width: 100px; height: 25px;" type="submit"><strong>Post</strong> </button>
+    <button style="width: 100px; height: 25px;" type="submit"><strong>Post</strong> </button><br><br>
 </form>
+<a href="/posts">
+        <br><br> <button type="submit"> <strong>Back to posts</strong> </button>
+    </a>
 </body>
 </html>
