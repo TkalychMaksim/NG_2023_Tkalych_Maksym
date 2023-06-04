@@ -23,7 +23,7 @@ def auth():
         user_password = request.form.get('password')
         if user_login in users and users[user_login] == user_password:
             return redirect('/chat')
-        return render_template('login_page.html')
+        return redirect('/login')
     else:
         return render_template('login_page.html')
 
